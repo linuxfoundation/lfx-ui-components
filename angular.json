@@ -1,0 +1,68 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "lfx-component-lib": {
+      "projectType": "library",
+      "root": "projects/lfx-component-lib",
+      "sourceRoot": "projects/lfx-component-lib/src",
+      "prefix": "lfx",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        },
+        "lfx-ng-schematics:lfx-component": {
+          "path": "projects/lfx-component-lib/src/lib/containers"
+        }
+      },
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/lfx-component-lib/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/lfx-component-lib/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/lfx-component-lib/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/lfx-component-lib/tsconfig.spec.json",
+            "polyfills": ["zone.js", "zone.js/testing"]
+          }
+        },
+        "storybook": {
+          "builder": "@storybook/angular:start-storybook",
+          "options": {
+            "configDir": "projects/lfx-component-lib/.storybook",
+            "browserTarget": "lfx-component-lib:build",
+            "compodoc": true,
+            "compodocArgs": ["-e", "json", "-d", "projects/lfx-component-lib"],
+            "port": 6006
+          }
+        },
+        "build-storybook": {
+          "builder": "@storybook/angular:build-storybook",
+          "options": {
+            "configDir": "projects/lfx-component-lib/.storybook",
+            "browserTarget": "lfx-component-lib:build",
+            "compodoc": true,
+            "compodocArgs": ["-e", "json", "-d", "projects/lfx-component-lib"],
+            "outputDir": "storybook-static"
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "analytics": false
+  }
+}

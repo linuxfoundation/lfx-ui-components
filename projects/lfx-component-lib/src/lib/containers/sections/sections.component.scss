@@ -1,0 +1,11 @@
+@import "../../styles/constants.scss";
+
+// TODO: This should be auto generated from the design tokens
+// TODO: use alias instead of the direct primitive values
+section {
+  background-color: $grey-0;
+  padding: $dim-24;
+  border-radius: $dim-8;
+  margin-right: $dim-16;
+  margin-bottom: $dim-16;
+}

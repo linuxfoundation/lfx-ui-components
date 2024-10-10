@@ -1,27 +1,59 @@
-# LfxStorybook
+# LFX Component Library
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.5.
+## Overview
 
-## Development server
+The LFX Component Library is a comprehensive collection of reusable UI components designed for the LFX team to share common components across various projects. This library streamlines development, ensures consistency, and improves efficiency in building user interfaces.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Key Features
 
-## Code scaffolding
+- **Shared Components**: A set of pre-built, customizable UI components.
+- **Storybook Integration**: Visual documentation and testing environment for components.
+- **Design Tokens**: Centralized design variables for consistent styling.
+- **Schematics**: Easy integration with Angular projects.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Repository Structure
 
-## Build
+lfx-component-lib/
+├── docs/
+├── projects/
+│ └── lfx-component-lib/
+│ ├── src/
+│ │ └── lib/
+│ └── schematics/
+├── scripts/
+├── design-tokens/
+└── .storybook/
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## How It Works
 
-## Running unit tests
+1. **Component Development**: Components are developed in `projects/lfx-component-lib/src/lib/`.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+2. **Documentation**: Each component is documented using Storybook, allowing developers to view and interact with components in isolation.
 
-## Running end-to-end tests
+3. **Design Tokens**: Color palettes and other design variables are defined in `design-tokens/` and `projects/lfx-component-lib/src/lib/configs/`.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+4. **Build Process**: Custom scripts in the `scripts/` directory handle tasks like generating color palettes and processing design tokens.
 
-## Further help
+5. **Integration**: The `ng-add` schematic in `projects/lfx-component-lib/schematics/` facilitates easy integration of the library into Angular projects.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+6. **Storybook**: The `.storybook/` directory contains configuration for Storybook, which is used to showcase and document components.
+
+## Usage
+
+To use this library in an Angular project:
+
+1. Install the library using ng add:
+   ```
+   ng add @lfx/component-lib
+   ```
+
+2. Import and use components in your Angular application:
+   ```typescript
+   import { LfxButtonModule } from '@lfx/component-lib';
+   ```
+
+3. Refer to the Storybook documentation for detailed usage instructions for each component.
+
+## Development
+
+Follow the instructions in the [docs/development-guide.md](docs/development-guide.md) file.

@@ -3,14 +3,23 @@
  * SPDX-License-Identifier: MIT
  */
 
-body {
-  color: #282e32;
+@import "./constants.scss";
+
+//  default text colors
+*,
+.text-primary {
+  color: $grey-1000;
 }
 
+.text-secondary {
+  color: #808b91;
+}
+
+// background colors
 .primary {
-  color: #282e32;
+  color: $blue-500;
 }
 
 .secondary {
-  color: #808b91;
+  color: $blue-50;
 }

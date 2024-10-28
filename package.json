@@ -4,11 +4,10 @@
   "scripts": {
     "ng": "ng",
     "build-palette": "ts-node -O '{\"module\": \"commonjs\"}' ./scripts/build-palette.ts",
-    "build-colors": "ts-node -O '{\"module\": \"commonjs\"}' ./scripts/build-colors.ts",
     "build-constants": "ts-node -O '{\"module\": \"commonjs\"}' ./scripts/build-constants.ts",
     "start": "ng serve",
     "increase-patch": "npm version patch --prefix projects/lfx-component-lib",
-    "prebuild": "npm run increase-patch && npm run build-constants && npm run build-colors",
+    "prebuild": "npm run increase-patch && npm run build-constants",
     "build": "ng build",
     "postbuild": "npm run build --prefix projects/lfx-component-lib",
     "watch": "ng build --watch --configuration development",

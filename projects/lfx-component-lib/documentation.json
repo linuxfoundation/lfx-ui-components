@@ -11,6 +11,46 @@
     "miscellaneous": {
         "variables": [
             {
+                "name": "AllColors",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/lfx-component-lib/src/lib/themes/colors.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  render: () => ({\n    template: `\n      <p>This is a paragraph of body text.</p>\n      <p class=\"text-secondary\">This is a paragraph of body text.</p>\n    `,\n  }),\n}"
+            },
+            {
+                "name": "AllTypography",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/lfx-component-lib/src/lib/themes/typography.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  render: () => ({\n    template: `\n      <h1>Heading 1</h1>\n      <h2>Heading 2</h2>\n      <h3>Heading 3</h3>\n      <h4>Heading 4</h4>\n      <h5>Heading 5</h5>\n      <p>This is a paragraph of body text.</p>\n      <small>This is small text (body2).</small>\n    `,\n  }),\n}"
+            },
+            {
+                "name": "BodyText",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/lfx-component-lib/src/lib/themes/typography.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  render: () => ({\n    template: `\n      <p>This is a paragraph of body text. It uses Open Sans, sans-serif font with a size of 0.875rem (14px) and line height of 1rem (16px).</p>\n    `,\n  }),\n}"
+            },
+            {
+                "name": "DefaultText",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/lfx-component-lib/src/lib/themes/colors.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  render: () => ({\n    template: `\n      <p class=\"text-primary\">This is a paragraph of body text.</p>\n    `,\n  }),\n}"
+            },
+            {
                 "name": "Error",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -19,6 +59,76 @@
                 "deprecationMessage": "",
                 "type": "Story",
                 "defaultValue": "{\n  args: {\n    type: 'error' as IType,\n  },\n  parameters: {\n    design: {\n      type: \"figspec\",\n      url: \"https://www.figma.com/design/nj8rOxBtzQCa7KrvBxF4aF/Coherence-Design-System?node-id=772-5210&t=zfHib1d5XSXabYJp-4\",\n    },\n  },\n  play: async ( {canvasElement} ) => {\n    const element = getElement(canvasElement);\n    await expect(element.classList).toContain('error');\n  }\n}"
+            },
+            {
+                "name": "Heading1",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/lfx-component-lib/src/lib/themes/typography.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  render: () => ({\n    template: `\n      <h1>This is a Heading 1</h1>\n      <p>It uses Roboto Slab, sans-serif font with a size of 1.375rem (22px) and line height of 1.625rem (26px).</p>\n    `,\n  }),\n}"
+            },
+            {
+                "name": "Heading2",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/lfx-component-lib/src/lib/themes/typography.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  render: () => ({\n    template: `\n      <h2>This is a Heading 2</h2>\n      <p>It uses Roboto Slab, sans-serif font with a size of 1.125rem (18px) and line height of 1.375rem (22px).</p>\n    `,\n  }),\n}"
+            },
+            {
+                "name": "Heading3",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/lfx-component-lib/src/lib/themes/typography.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  render: () => ({\n    template: `\n      <h3>This is a Heading 3</h3>\n      <p>It uses Open Sans, sans-serif font with a size of 1rem (16px) and line height of 1.125rem (18px).</p>\n    `,\n  }),\n}"
+            },
+            {
+                "name": "Heading4",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/lfx-component-lib/src/lib/themes/typography.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  render: () => ({\n    template: `\n      <h4>This is a Heading 4</h4>\n      <p>It uses Open Sans, sans-serif font with a size of 0.875rem (14px) and line height of 1rem (16px).</p>\n    `,\n  }),\n}"
+            },
+            {
+                "name": "Heading5",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/lfx-component-lib/src/lib/themes/typography.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  render: () => ({\n    template: `\n      <h5>This is a Heading 5</h5>\n      <p>It uses Open Sans, sans-serif font with a size of 0.75rem (12px) and line height of 0.875rem (14px).</p>\n    `,\n  }),\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/lfx-component-lib/src/lib/themes/colors.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta",
+                "defaultValue": "{\n  title: 'LFX Components/Themes/Colors',\n  tags: ['autodocs'],\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/lfx-component-lib/src/lib/themes/typography.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta",
+                "defaultValue": "{\n  title: 'LFX Components/Themes/Typography',\n  tags: ['autodocs'],\n}"
             },
             {
                 "name": "meta",
@@ -61,6 +171,16 @@
                 "defaultValue": "{\n  parameters: {\n    controls: {\n      matchers: {\n        color: /(background|color)$/i,\n        date: /Date$/i,\n      },\n    },\n  },\n}"
             },
             {
+                "name": "SecondaryText",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/lfx-component-lib/src/lib/themes/colors.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  render: () => ({\n    template: `\n      <p class=\"text-secondary\">This is a paragraph of body text</p>\n    `,\n  }),\n}"
+            },
+            {
                 "name": "Section",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -69,6 +189,16 @@
                 "deprecationMessage": "",
                 "type": "Story",
                 "defaultValue": "{\n  render: (args: any) => ({\n    template: `<lfx-sections>\n      <h1>Section</h1>\n      <p>Section content here</p>\n    </lfx-sections>\n    <div style=\"display: grid; grid-template-columns: repeat(2,minmax(0,1fr))\">\n    <lfx-sections>\n      <h1>Section</h1>\n      <p>Section content here</p>\n    </lfx-sections>\n    <lfx-sections>\n      <h1>Section</h1>\n      <p>Section content here</p>\n    </lfx-sections>\n    </div>`,\n  }),\n}"
+            },
+            {
+                "name": "SmallText",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/lfx-component-lib/src/lib/themes/typography.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  render: () => ({\n    template: `\n      <small>This is small text, also known as body2 in Figma. It uses Open Sans, sans-serif font with a size of 0.875rem (14px).</small>\n    `,\n  }),\n}"
             },
             {
                 "name": "Success",
@@ -127,6 +257,28 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
+                "rawtype": "StoryObj",
+                "file": "projects/lfx-component-lib/src/lib/themes/colors.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 183
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj",
+                "file": "projects/lfx-component-lib/src/lib/themes/typography.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 183
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
                 "rawtype": "StoryObj<SectionsComponent>",
                 "file": "projects/lfx-component-lib/src/lib/containers/sections/__docs__/sections.stories.ts",
                 "deprecated": false,
@@ -148,6 +300,140 @@
         ],
         "enumerations": [],
         "groupedVariables": {
+            "projects/lfx-component-lib/src/lib/themes/colors.stories.ts": [
+                {
+                    "name": "AllColors",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/lfx-component-lib/src/lib/themes/colors.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <p>This is a paragraph of body text.</p>\n      <p class=\"text-secondary\">This is a paragraph of body text.</p>\n    `,\n  }),\n}"
+                },
+                {
+                    "name": "DefaultText",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/lfx-component-lib/src/lib/themes/colors.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <p class=\"text-primary\">This is a paragraph of body text.</p>\n    `,\n  }),\n}"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/lfx-component-lib/src/lib/themes/colors.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta",
+                    "defaultValue": "{\n  title: 'LFX Components/Themes/Colors',\n  tags: ['autodocs'],\n}"
+                },
+                {
+                    "name": "SecondaryText",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/lfx-component-lib/src/lib/themes/colors.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <p class=\"text-secondary\">This is a paragraph of body text</p>\n    `,\n  }),\n}"
+                }
+            ],
+            "projects/lfx-component-lib/src/lib/themes/typography.stories.ts": [
+                {
+                    "name": "AllTypography",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/lfx-component-lib/src/lib/themes/typography.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <h1>Heading 1</h1>\n      <h2>Heading 2</h2>\n      <h3>Heading 3</h3>\n      <h4>Heading 4</h4>\n      <h5>Heading 5</h5>\n      <p>This is a paragraph of body text.</p>\n      <small>This is small text (body2).</small>\n    `,\n  }),\n}"
+                },
+                {
+                    "name": "BodyText",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/lfx-component-lib/src/lib/themes/typography.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <p>This is a paragraph of body text. It uses Open Sans, sans-serif font with a size of 0.875rem (14px) and line height of 1rem (16px).</p>\n    `,\n  }),\n}"
+                },
+                {
+                    "name": "Heading1",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/lfx-component-lib/src/lib/themes/typography.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <h1>This is a Heading 1</h1>\n      <p>It uses Roboto Slab, sans-serif font with a size of 1.375rem (22px) and line height of 1.625rem (26px).</p>\n    `,\n  }),\n}"
+                },
+                {
+                    "name": "Heading2",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/lfx-component-lib/src/lib/themes/typography.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <h2>This is a Heading 2</h2>\n      <p>It uses Roboto Slab, sans-serif font with a size of 1.125rem (18px) and line height of 1.375rem (22px).</p>\n    `,\n  }),\n}"
+                },
+                {
+                    "name": "Heading3",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/lfx-component-lib/src/lib/themes/typography.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <h3>This is a Heading 3</h3>\n      <p>It uses Open Sans, sans-serif font with a size of 1rem (16px) and line height of 1.125rem (18px).</p>\n    `,\n  }),\n}"
+                },
+                {
+                    "name": "Heading4",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/lfx-component-lib/src/lib/themes/typography.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <h4>This is a Heading 4</h4>\n      <p>It uses Open Sans, sans-serif font with a size of 0.875rem (14px) and line height of 1rem (16px).</p>\n    `,\n  }),\n}"
+                },
+                {
+                    "name": "Heading5",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/lfx-component-lib/src/lib/themes/typography.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <h5>This is a Heading 5</h5>\n      <p>It uses Open Sans, sans-serif font with a size of 0.75rem (12px) and line height of 0.875rem (14px).</p>\n    `,\n  }),\n}"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/lfx-component-lib/src/lib/themes/typography.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta",
+                    "defaultValue": "{\n  title: 'LFX Components/Themes/Typography',\n  tags: ['autodocs'],\n}"
+                },
+                {
+                    "name": "SmallText",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/lfx-component-lib/src/lib/themes/typography.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <small>This is small text, also known as body2 in Figma. It uses Open Sans, sans-serif font with a size of 0.875rem (14px).</small>\n    `,\n  }),\n}"
+                }
+            ],
             "projects/lfx-component-lib/src/lib/containers/toast/__docs__/toast.stories.ts": [
                 {
                     "name": "Error",
@@ -270,6 +556,32 @@
         },
         "groupedEnumerations": {},
         "groupedTypeAliases": {
+            "projects/lfx-component-lib/src/lib/themes/colors.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj",
+                    "file": "projects/lfx-component-lib/src/lib/themes/colors.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 183
+                }
+            ],
+            "projects/lfx-component-lib/src/lib/themes/typography.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj",
+                    "file": "projects/lfx-component-lib/src/lib/themes/typography.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 183
+                }
+            ],
             "projects/lfx-component-lib/src/lib/containers/sections/__docs__/sections.stories.ts": [
                 {
                     "name": "Story",
@@ -389,6 +701,136 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "Warning",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lfx-component-lib/src/lib/themes/colors.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "AllColors",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lfx-component-lib/src/lib/themes/colors.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "DefaultText",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lfx-component-lib/src/lib/themes/colors.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lfx-component-lib/src/lib/themes/colors.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "SecondaryText",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lfx-component-lib/src/lib/themes/typography.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "AllTypography",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lfx-component-lib/src/lib/themes/typography.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "BodyText",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lfx-component-lib/src/lib/themes/typography.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Heading1",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lfx-component-lib/src/lib/themes/typography.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Heading2",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lfx-component-lib/src/lib/themes/typography.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Heading3",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lfx-component-lib/src/lib/themes/typography.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Heading4",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lfx-component-lib/src/lib/themes/typography.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Heading5",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lfx-component-lib/src/lib/themes/typography.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lfx-component-lib/src/lib/themes/typography.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "SmallText",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"

@@ -14,11 +14,11 @@
                 "name": "AllColors",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/lfx-component-lib/src/lib/themes/colors.stories.ts",
+                "file": "projects/lfx-component-lib/src/lib/themes/text-colors.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  render: () => ({\n    template: `\n      <p>This is a paragraph of body text.</p>\n      <p class=\"text-secondary\">This is a paragraph of body text.</p>\n    `,\n  }),\n}"
+                "defaultValue": "{\n  render: () => ({\n    template: `\n      <p>This is a paragraph of body text.</p>\n      <p class=\"text-secondary\">This is a paragraph of body text.</p>\n      <a>This is a link text</a><br />\n      <span class=\"link-text\">This is a span with link text</span>\n      <p class=\"message notice\">This is a message notice</p>\n      <p class=\"message warning\">This is a message warning</p>\n      <p class=\"message success\">This is a message success</p>\n      <p class=\"message error\">This is a message error</p>\n    `,\n  }),\n}"
             },
             {
                 "name": "AllTypography",
@@ -44,7 +44,7 @@
                 "name": "DefaultText",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/lfx-component-lib/src/lib/themes/colors.stories.ts",
+                "file": "projects/lfx-component-lib/src/lib/themes/text-colors.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -111,14 +111,64 @@
                 "defaultValue": "{\n  render: () => ({\n    template: `\n      <h5>This is a Heading 5</h5>\n      <p>It uses Open Sans, sans-serif font with a size of 0.75rem (12px) and line height of 0.875rem (14px).</p>\n    `,\n  }),\n}"
             },
             {
+                "name": "LinkText",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/lfx-component-lib/src/lib/themes/text-colors.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  render: () => ({\n    template: `\n      <a>This is a link text</a> <br />\n      <span class=\"link-text\">This is a span with link text</span>\n    `,\n  }),\n}"
+            },
+            {
+                "name": "MessageError",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/lfx-component-lib/src/lib/themes/text-colors.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  render: () => ({\n    template: `\n      <p class=\"message error\">This is a message error</p>\n    `,\n  }),\n}"
+            },
+            {
+                "name": "MessageNotice",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/lfx-component-lib/src/lib/themes/text-colors.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  render: () => ({\n    template: `\n      <p class=\"message notice\">This is a message notice</p>\n    `,\n  }),\n}"
+            },
+            {
+                "name": "MessageSuccess",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/lfx-component-lib/src/lib/themes/text-colors.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  render: () => ({\n    template: `\n      <p class=\"message success\">This is a message success</p>\n    `,\n  }),\n}"
+            },
+            {
+                "name": "MessageWarning",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/lfx-component-lib/src/lib/themes/text-colors.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  render: () => ({\n    template: `\n      <p class=\"message warning\">This is a message warning</p>\n    `,\n  }),\n}"
+            },
+            {
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/lfx-component-lib/src/lib/themes/colors.stories.ts",
+                "file": "projects/lfx-component-lib/src/lib/themes/text-colors.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta",
-                "defaultValue": "{\n  title: 'LFX Components/Themes/Colors',\n  tags: ['autodocs'],\n}"
+                "defaultValue": "{\n  title: 'LFX Components/Themes/Text Colors',\n  tags: ['autodocs'],\n}"
             },
             {
                 "name": "meta",
@@ -174,7 +224,7 @@
                 "name": "SecondaryText",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/lfx-component-lib/src/lib/themes/colors.stories.ts",
+                "file": "projects/lfx-component-lib/src/lib/themes/text-colors.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -258,7 +308,7 @@
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
                 "rawtype": "StoryObj",
-                "file": "projects/lfx-component-lib/src/lib/themes/colors.stories.ts",
+                "file": "projects/lfx-component-lib/src/lib/themes/text-colors.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -300,42 +350,92 @@
         ],
         "enumerations": [],
         "groupedVariables": {
-            "projects/lfx-component-lib/src/lib/themes/colors.stories.ts": [
+            "projects/lfx-component-lib/src/lib/themes/text-colors.stories.ts": [
                 {
                     "name": "AllColors",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/lfx-component-lib/src/lib/themes/colors.stories.ts",
+                    "file": "projects/lfx-component-lib/src/lib/themes/text-colors.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <p>This is a paragraph of body text.</p>\n      <p class=\"text-secondary\">This is a paragraph of body text.</p>\n    `,\n  }),\n}"
+                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <p>This is a paragraph of body text.</p>\n      <p class=\"text-secondary\">This is a paragraph of body text.</p>\n      <a>This is a link text</a><br />\n      <span class=\"link-text\">This is a span with link text</span>\n      <p class=\"message notice\">This is a message notice</p>\n      <p class=\"message warning\">This is a message warning</p>\n      <p class=\"message success\">This is a message success</p>\n      <p class=\"message error\">This is a message error</p>\n    `,\n  }),\n}"
                 },
                 {
                     "name": "DefaultText",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/lfx-component-lib/src/lib/themes/colors.stories.ts",
+                    "file": "projects/lfx-component-lib/src/lib/themes/text-colors.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
                     "defaultValue": "{\n  render: () => ({\n    template: `\n      <p class=\"text-primary\">This is a paragraph of body text.</p>\n    `,\n  }),\n}"
                 },
                 {
+                    "name": "LinkText",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/lfx-component-lib/src/lib/themes/text-colors.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <a>This is a link text</a> <br />\n      <span class=\"link-text\">This is a span with link text</span>\n    `,\n  }),\n}"
+                },
+                {
+                    "name": "MessageError",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/lfx-component-lib/src/lib/themes/text-colors.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <p class=\"message error\">This is a message error</p>\n    `,\n  }),\n}"
+                },
+                {
+                    "name": "MessageNotice",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/lfx-component-lib/src/lib/themes/text-colors.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <p class=\"message notice\">This is a message notice</p>\n    `,\n  }),\n}"
+                },
+                {
+                    "name": "MessageSuccess",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/lfx-component-lib/src/lib/themes/text-colors.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <p class=\"message success\">This is a message success</p>\n    `,\n  }),\n}"
+                },
+                {
+                    "name": "MessageWarning",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/lfx-component-lib/src/lib/themes/text-colors.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <p class=\"message warning\">This is a message warning</p>\n    `,\n  }),\n}"
+                },
+                {
                     "name": "meta",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/lfx-component-lib/src/lib/themes/colors.stories.ts",
+                    "file": "projects/lfx-component-lib/src/lib/themes/text-colors.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta",
-                    "defaultValue": "{\n  title: 'LFX Components/Themes/Colors',\n  tags: ['autodocs'],\n}"
+                    "defaultValue": "{\n  title: 'LFX Components/Themes/Text Colors',\n  tags: ['autodocs'],\n}"
                 },
                 {
                     "name": "SecondaryText",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/lfx-component-lib/src/lib/themes/colors.stories.ts",
+                    "file": "projects/lfx-component-lib/src/lib/themes/text-colors.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -556,13 +656,13 @@
         },
         "groupedEnumerations": {},
         "groupedTypeAliases": {
-            "projects/lfx-component-lib/src/lib/themes/colors.stories.ts": [
+            "projects/lfx-component-lib/src/lib/themes/text-colors.stories.ts": [
                 {
                     "name": "Story",
                     "ctype": "miscellaneous",
                     "subtype": "typealias",
                     "rawtype": "StoryObj",
-                    "file": "projects/lfx-component-lib/src/lib/themes/colors.stories.ts",
+                    "file": "projects/lfx-component-lib/src/lib/themes/text-colors.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
@@ -706,7 +806,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/lfx-component-lib/src/lib/themes/colors.stories.ts",
+                "filePath": "projects/lfx-component-lib/src/lib/themes/text-colors.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -716,7 +816,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/lfx-component-lib/src/lib/themes/colors.stories.ts",
+                "filePath": "projects/lfx-component-lib/src/lib/themes/text-colors.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -726,7 +826,57 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/lfx-component-lib/src/lib/themes/colors.stories.ts",
+                "filePath": "projects/lfx-component-lib/src/lib/themes/text-colors.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "LinkText",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lfx-component-lib/src/lib/themes/text-colors.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "MessageError",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lfx-component-lib/src/lib/themes/text-colors.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "MessageNotice",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lfx-component-lib/src/lib/themes/text-colors.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "MessageSuccess",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lfx-component-lib/src/lib/themes/text-colors.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "MessageWarning",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lfx-component-lib/src/lib/themes/text-colors.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -736,7 +886,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/lfx-component-lib/src/lib/themes/colors.stories.ts",
+                "filePath": "projects/lfx-component-lib/src/lib/themes/text-colors.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",

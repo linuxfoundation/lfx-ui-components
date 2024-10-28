@@ -23,3 +23,54 @@
 .secondary {
   color: $blue-50;
 }
+
+a,
+.link-text {
+  cursor: pointer;
+  color: $blue-500;
+  &:hover {
+    color: $blue-700;
+  }
+  &:active {
+    color: $blue-800;
+  }
+}
+
+.message {
+  &.notice {
+    color: $blue-500;
+  }
+  &.warning {
+    color: $orange-500;
+  }
+  &.success {
+    color: $green-500;
+  }
+  &.error {
+    color: $red-500;
+  }
+}
+
+// background colors
+.bg-primary {
+  background-color: $blue-500;
+}
+
+.bg-secondary {
+  background-color: $blue-50;
+}
+
+.bg-message {
+  &.notice {
+    background-color: $blue-50;
+  }
+  &.warning {
+    background-color: $orange-50;
+  }
+  &.success {
+    background-color: $green-50;
+  }
+  &.error {
+    background-color: $red-50;
+  }
+}

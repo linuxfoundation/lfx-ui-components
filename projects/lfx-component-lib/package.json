@@ -32,6 +32,12 @@
     },
     "./colors": {
       "sass": "./styles/colors.scss"
+    },
+    "./controls": {
+      "sass": "./styles/controls.scss"
+    },
+    "./all": {
+      "sass": "./styles/index.scss"
     }
   }
 }

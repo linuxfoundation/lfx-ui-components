@@ -1,0 +1,52 @@
+@import "../constants.scss";
+
+$primary-color: $blue-500;
+$secondary-color: $blue-50;
+$text-primary-color: $blue-500;
+$text-secondary-color: $blue-50;
+$default-text-color: $grey-1000;
+$light-text-color: $grey-500;
+
+@mixin primary-color {
+  background-color: $primary-color;
+}
+
+@mixin secondary-color {
+  background-color: $secondary-color;
+}
+
+@mixin text-default-color {
+  color: $default-text-color;
+}
+
+@mixin text-light-color {
+  color: $light-text-color;
+}
+
+@mixin text-white {
+  color: $grey-0;
+}
+
+@mixin message-color-notice {
+  color: $primary-color;
+}
+
+@mixin message-color-warning {
+  color: $orange-500;
+}
+
+@mixin message-color-success {
+  color: $green-500;
+}
+
+@mixin message-color-error {
+  color: $red-500;
+}
+
+@mixin link-hover-color {
+  color: $blue-700;
+}
+
+@mixin link-active-color {
+  color: $blue-800;
+}

@@ -20,7 +20,9 @@ const meta: Meta<ButtonsComponent> = {
   render: (args) => ({
     template: `
       <lfx-buttons type="primary">
+        <i class="fa-sharp fa-light fa-file-chart-column"></i>
         <span>Button Text</span>
+        <i class="fa-sharp fa-light fa-arrow-right"></i>
       </lfx-buttons>
     `,
   }),

@@ -21,6 +21,10 @@ $secondary-text-color: $grey-500;
   color: $secondary-text-color;
 }
 
+@mixin text-white {
+  color: $grey-0;
+}
+
 @mixin message-color-notice {
   color: $primary-color;
 }

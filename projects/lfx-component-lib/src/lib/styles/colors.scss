@@ -6,7 +6,8 @@
 @import "./mixins/color-mixins.scss";
 
 //  default text colors
-*,
+html,
+body,
 .text-primary {
   @include text-primary-color;
 }

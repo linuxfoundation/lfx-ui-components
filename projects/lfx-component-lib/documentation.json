@@ -218,7 +218,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<ButtonsComponent>",
-                "defaultValue": "{\n  title: 'LFX Components/Controls/Buttons',\n  component: ButtonsComponent,\n  tags: ['autodocs'],\n  render: (args) => ({\n    template: `\n      <lfx-buttons [type]=\"primary\">\n        <span>Button Text</span>\n      </lfx-buttons>\n    `,\n  }),\n}"
+                "defaultValue": "{\n  title: 'LFX Components/Controls/Buttons',\n  component: ButtonsComponent,\n  tags: ['autodocs'],\n  render: (args) => ({\n    template: `\n      <lfx-buttons type=\"primary\">\n        <i class=\"fa-sharp fa-light fa-file-chart-column\"></i>\n        <span>Button Text</span>\n        <i class=\"fa-sharp fa-light fa-arrow-right\"></i>\n      </lfx-buttons>\n    `,\n  }),\n}"
             },
             {
                 "name": "Notice",
@@ -613,7 +613,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<ButtonsComponent>",
-                    "defaultValue": "{\n  title: 'LFX Components/Controls/Buttons',\n  component: ButtonsComponent,\n  tags: ['autodocs'],\n  render: (args) => ({\n    template: `\n      <lfx-buttons [type]=\"primary\">\n        <span>Button Text</span>\n      </lfx-buttons>\n    `,\n  }),\n}"
+                    "defaultValue": "{\n  title: 'LFX Components/Controls/Buttons',\n  component: ButtonsComponent,\n  tags: ['autodocs'],\n  render: (args) => ({\n    template: `\n      <lfx-buttons type=\"primary\">\n        <i class=\"fa-sharp fa-light fa-file-chart-column\"></i>\n        <span>Button Text</span>\n        <i class=\"fa-sharp fa-light fa-arrow-right\"></i>\n      </lfx-buttons>\n    `,\n  }),\n}"
                 }
             ],
             "projects/lfx-component-lib/src/lib/containers/toast/__docs__/toast.stories.ts": [

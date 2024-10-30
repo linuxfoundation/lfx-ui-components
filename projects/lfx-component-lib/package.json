@@ -20,9 +20,6 @@
     "copyfiles": "^2.4.1"
   },
   "sideEffects": false,
-  "publishConfig": {
-    "registry": "http://localhost:4873"
-  },
   "exports": {
     "./color-palette.json": {
       "default": "./configs/color-palette.json"

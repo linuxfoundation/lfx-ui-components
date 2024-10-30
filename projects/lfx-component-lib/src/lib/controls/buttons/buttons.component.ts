@@ -1,10 +1,6 @@
 import { Component, input } from '@angular/core';
 
-enum ButtonType {
-  PRIMARY = 'primary',
-  SECONDARY = 'secondary',
-  TERTIARY = 'tertiary',
-}
+export type IButtonType = 'primary' | 'secondary' | 'tertiary';
 
 @Component({
   selector: 'lfx-buttons',
@@ -14,5 +10,6 @@ enum ButtonType {
   styleUrl: './buttons.component.scss',
 })
 export class ButtonsComponent {
-  type = input<ButtonType>(ButtonType.PRIMARY);
+  type = input<IButtonType>('primary');
+  disabled = input<boolean>(false);
 }

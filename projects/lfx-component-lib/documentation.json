@@ -41,16 +41,6 @@
                 "defaultValue": "{\n  render: () => ({\n    template: `\n      <p>This is a paragraph of body text. It uses Open Sans, sans-serif font with a size of 0.875rem (14px) and line height of 1rem (16px).</p>\n    `,\n  }),\n}"
             },
             {
-                "name": "Default",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "projects/lfx-component-lib/src/lib/controls/buttons/__docs__/buttons.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story",
-                "defaultValue": "{\n  args: {},\n}"
-            },
-            {
                 "name": "DefaultText",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -58,7 +48,17 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  render: () => ({\n    template: `\n      <p class=\"text-primary\">This is a paragraph of body text.</p>\n    `,\n  }),\n}"
+                "defaultValue": "{\n  render: () => ({\n    template: `\n      <p class=\"text-default\">This is a paragraph of body text.</p>\n    `,\n  }),\n}"
+            },
+            {
+                "name": "Disabled",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/lfx-component-lib/src/lib/controls/buttons/__docs__/buttons.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    disabled: true,\n  },\n  render: (args) => ({\n    template: `\n      <lfx-buttons type=\"primary\" [disabled]=\"true\">\n        <i class=\"fa-sharp fa-light fa-file-chart-column\"></i>\n        <span>Button Text</span>\n        <i class=\"fa-sharp fa-light fa-arrow-right\"></i>\n      </lfx-buttons>\n    `,\n  }),\n  parameters: {\n    design: {\n      type: 'figspec',\n      url: 'https://www.figma.com/file/nj8rOxBtzQCa7KrvBxF4aF/Coherence-Design-System?node-id=772-5198&t=zfHib1d5XSXabYJp-4',\n    },\n  },\n  play: async ({ canvasElement }) => {\n    const element = getElement(canvasElement);\n    await expect(element.querySelector('button')?.disabled).toBeTruthy();\n  },\n}"
             },
             {
                 "name": "Error",
@@ -239,6 +239,16 @@
                 "deprecationMessage": "",
                 "type": "Preview",
                 "defaultValue": "{\n  parameters: {\n    controls: {\n      matchers: {\n        color: /(background|color)$/i,\n        date: /Date$/i,\n      },\n    },\n  },\n}"
+            },
+            {
+                "name": "Primary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/lfx-component-lib/src/lib/controls/buttons/__docs__/buttons.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {},\n}"
             },
             {
                 "name": "SecondaryText",
@@ -429,7 +439,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <p class=\"text-primary\">This is a paragraph of body text.</p>\n    `,\n  }),\n}"
+                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <p class=\"text-default\">This is a paragraph of body text.</p>\n    `,\n  }),\n}"
                 },
                 {
                     "name": "LinkText",
@@ -596,14 +606,14 @@
             ],
             "projects/lfx-component-lib/src/lib/controls/buttons/__docs__/buttons.stories.ts": [
                 {
-                    "name": "Default",
+                    "name": "Disabled",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "projects/lfx-component-lib/src/lib/controls/buttons/__docs__/buttons.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {},\n}"
+                    "defaultValue": "{\n  args: {\n    disabled: true,\n  },\n  render: (args) => ({\n    template: `\n      <lfx-buttons type=\"primary\" [disabled]=\"true\">\n        <i class=\"fa-sharp fa-light fa-file-chart-column\"></i>\n        <span>Button Text</span>\n        <i class=\"fa-sharp fa-light fa-arrow-right\"></i>\n      </lfx-buttons>\n    `,\n  }),\n  parameters: {\n    design: {\n      type: 'figspec',\n      url: 'https://www.figma.com/file/nj8rOxBtzQCa7KrvBxF4aF/Coherence-Design-System?node-id=772-5198&t=zfHib1d5XSXabYJp-4',\n    },\n  },\n  play: async ({ canvasElement }) => {\n    const element = getElement(canvasElement);\n    await expect(element.querySelector('button')?.disabled).toBeTruthy();\n  },\n}"
                 },
                 {
                     "name": "meta",
@@ -614,6 +624,16 @@
                     "deprecationMessage": "",
                     "type": "Meta<ButtonsComponent>",
                     "defaultValue": "{\n  title: 'LFX Components/Controls/Buttons',\n  component: ButtonsComponent,\n  tags: ['autodocs'],\n  render: (args) => ({\n    template: `\n      <lfx-buttons type=\"primary\">\n        <i class=\"fa-sharp fa-light fa-file-chart-column\"></i>\n        <span>Button Text</span>\n        <i class=\"fa-sharp fa-light fa-arrow-right\"></i>\n      </lfx-buttons>\n    `,\n  }),\n}"
+                },
+                {
+                    "name": "Primary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/lfx-component-lib/src/lib/controls/buttons/__docs__/buttons.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {},\n}"
                 }
             ],
             "projects/lfx-component-lib/src/lib/containers/toast/__docs__/toast.stories.ts": [
@@ -946,7 +966,7 @@
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
-                "name": "Default",
+                "name": "Disabled",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
@@ -957,6 +977,16 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lfx-component-lib/src/lib/controls/buttons/__docs__/buttons.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Primary",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"

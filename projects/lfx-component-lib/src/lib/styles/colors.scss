@@ -8,12 +8,12 @@
 //  default text colors
 html,
 body,
-.text-primary {
-  @include text-primary-color;
+.text-default {
+  @include text-default-color;
 }
 
 .text-secondary {
-  @include text-secondary-color;
+  @include text-light-color;
 }
 
 // background colors
@@ -28,7 +28,7 @@ body,
 a,
 .link-text {
   cursor: pointer;
-  @include primary-color;
+  color: $primary-color;
   &:hover {
     @include link-hover-color;
   }

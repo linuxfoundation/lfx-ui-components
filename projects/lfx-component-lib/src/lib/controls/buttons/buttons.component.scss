@@ -20,5 +20,50 @@
     &:active {
       background-color: $blue-800;
     }
+
+    &:disabled {
+      background-color: $grey-300;
+      cursor: not-allowed;
+      color: $grey-700;
+    }
+  }
+
+  &.lfx-button--secondary {
+    @include secondary-color;
+    color: $text-primary-color;
+
+    &:hover {
+      color: $blue-700;
+    }
+
+    &:active {
+      color: $blue-800;
+    }
+
+    &:disabled {
+      background-color: $grey-300;
+      cursor: not-allowed;
+      color: $grey-700;
+    }
+  }
+
+  &.lfx-button--tertiary {
+    @include secondary-color;
+    color: $text-primary-color;
+    padding: 0.5rem 0.75rem;
+
+    &:hover {
+      color: $blue-700;
+    }
+
+    &:active {
+      color: $blue-800;
+    }
+
+    &:disabled {
+      background-color: $grey-300;
+      cursor: not-allowed;
+      color: $grey-700;
+    }
   }
 }

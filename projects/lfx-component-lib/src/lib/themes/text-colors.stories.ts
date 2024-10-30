@@ -11,7 +11,7 @@ type Story = StoryObj;
 export const DefaultText: Story = {
   render: () => ({
     template: `
-      <p class="text-primary">This is a paragraph of body text.</p>
+      <p class="text-default">This is a paragraph of body text.</p>
     `,
   }),
 };

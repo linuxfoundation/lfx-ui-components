@@ -2,8 +2,10 @@
 
 $primary-color: $blue-500;
 $secondary-color: $blue-50;
-$primary-text-color: $grey-1000;
-$secondary-text-color: $grey-500;
+$text-primary-color: $blue-500;
+$text-secondary-color: $blue-50;
+$default-text-color: $grey-1000;
+$light-text-color: $grey-500;
 
 @mixin primary-color {
   background-color: $primary-color;
@@ -13,12 +15,12 @@ $secondary-text-color: $grey-500;
   background-color: $secondary-color;
 }
 
-@mixin text-primary-color {
-  color: $primary-text-color;
+@mixin text-default-color {
+  color: $default-text-color;
 }
 
-@mixin text-secondary-color {
-  color: $secondary-text-color;
+@mixin text-light-color {
+  color: $light-text-color;
 }
 
 @mixin text-white {

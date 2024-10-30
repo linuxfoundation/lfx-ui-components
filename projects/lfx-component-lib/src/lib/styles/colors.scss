@@ -3,14 +3,74 @@
  * SPDX-License-Identifier: MIT
  */
 
-body {
-  color: #282e32;
+@import "./constants.scss";
+
+//  default text colors
+*,
+.text-primary {
+  color: $grey-1000;
 }
 
+.text-secondary {
+  color: #808b91;
+}
+
+// background colors
 .primary {
-  color: #282e32;
+  color: $blue-500;
 }
 
 .secondary {
-  color: #808b91;
+  color: $blue-50;
+}
+
+a,
+.link-text {
+  cursor: pointer;
+  color: $blue-500;
+  &:hover {
+    color: $blue-700;
+  }
+  &:active {
+    color: $blue-800;
+  }
+}
+
+.message {
+  &.notice {
+    color: $blue-500;
+  }
+  &.warning {
+    color: $orange-500;
+  }
+  &.success {
+    color: $green-500;
+  }
+  &.error {
+    color: $red-500;
+  }
+}
+
+// background colors
+.bg-primary {
+  background-color: $blue-500;
+}
+
+.bg-secondary {
+  background-color: $blue-50;
+}
+
+.bg-message {
+  &.notice {
+    background-color: $blue-50;
+  }
+  &.warning {
+    background-color: $orange-50;
+  }
+  &.success {
+    background-color: $green-50;
+  }
+  &.error {
+    background-color: $red-50;
+  }
 }

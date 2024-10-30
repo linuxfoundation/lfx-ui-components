@@ -46,7 +46,8 @@
             "browserTarget": "lfx-component-lib:build",
             "compodoc": true,
             "compodocArgs": ["-e", "json", "-d", "projects/lfx-component-lib"],
-            "port": 6006
+            "port": 6006,
+            "styles": ["projects/lfx-component-lib/src/lib/styles/index.scss"]
           }
         },
         "build-storybook": {

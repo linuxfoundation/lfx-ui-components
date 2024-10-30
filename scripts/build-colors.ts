@@ -1,5 +1,7 @@
 // Copyright The Linux Foundation and each contributor to LFX.
 // SPDX-License-Identifier: MIT
+
+// TODO: revisit this script. Disabling this for now.
 import { colorBase } from './helpers/base-css';
 import { getPrimitiveValue } from './helpers/helper-functions';
 import { primitives, lightMode } from './helpers/read-json';

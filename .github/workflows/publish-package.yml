@@ -22,8 +22,6 @@ jobs:
         with:
           node-version: "20.x"
           registry-url: "https://npm.pkg.github.com"
-          # Defaults to the user or organization that owns the workflow file
-          scope: "@emlimlf"
       - run: yarn install
       - run: yarn run build
       - run: cd dist/lfx-component-lib/ && npm pack

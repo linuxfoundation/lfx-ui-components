@@ -3,14 +3,14 @@
 # Workflow name
 name: Build and Publish Storybook to GitHub Pages
 
-on:
-  # temp only so we can skip this build
-  # push:
-  #   tags:
-  #     - v*
-  push:
-    branches:
-      - main
+# on:
+# temp only so we can skip this build
+# push:
+#   tags:
+#     - v*
+# push:
+#   branches:
+#     - main
 
 permissions:
   contents: read

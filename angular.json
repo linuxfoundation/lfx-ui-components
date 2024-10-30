@@ -13,7 +13,7 @@
           "style": "scss"
         },
         "lfx-ng-schematics:lfx-component": {
-          "path": "projects/lfx-component-lib/src/lib/containers"
+          "path": "projects/lfx-component-lib/src/lib"
         }
       },
       "architect": {

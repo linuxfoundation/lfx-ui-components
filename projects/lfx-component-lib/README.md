@@ -14,7 +14,14 @@ Run `ng generate component component-name --project lfx-component-lib` to genera
 
 ## Scaffolding with Storybook using lfx-ng-schematics (see: https://github.com/linuxfoundation/lfx-ng-schematics for details)
 
-Run `ng g lfx-ng-schematics:lfx-c --name <name of component>`
+Before running the schematics, make sure you have the lfx-ng-schematics working in your local project. This can be done in 2 ways:
+
+1. Install lfx-ng-schematics in your local project: `npm install @linuxfoundation/lfx-ng-schematics` (Note: this has to be deployed to the npm registry first, if not then go to step 2)
+2. Clone the lfx-ng-schematics repo and install the plugins then run `yarn verdaccio` to start the local npm registry. Add the local registry to your npm client: `ng add lfx-ng-schematics --registry=http://localhost:4873` (to verify it's installed run `schematics lfx-ng-schematics: --list-schematics`)
+
+For more information see this video: https://www.loom.com/share/6f296c0558f348c2a8de911006d2a903?sid=ae32b4e8-a02a-4e22-bd7a-c44fb823584c
+
+After installing the schematics, run `ng g lfx-ng-schematics:lfx-c --name <name of component>`
 
 ## Build
 

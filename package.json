@@ -1,5 +1,5 @@
 {
-  "name": "@emlimlf/lfx-storybook",
+  "name": "lfx-ui-components",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",

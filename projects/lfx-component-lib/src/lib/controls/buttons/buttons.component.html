@@ -1,5 +1,6 @@
 <button
   class="lfx-button lfx-button--{{ type().toLowerCase() }}"
+  [class.lfx-button--drill-down]="isDrillDown()"
   [disabled]="disabled()"
   (click)="onClick()"
 >

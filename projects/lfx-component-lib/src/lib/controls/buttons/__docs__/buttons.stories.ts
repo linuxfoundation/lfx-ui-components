@@ -19,7 +19,7 @@ const meta: Meta<ButtonsComponent> = {
   tags: ['autodocs'],
   render: (args) => ({
     template: `
-      <lfx-buttons type="${args.type}" [disabled]="${args.disabled}">
+      <lfx-buttons type="${args.type}" [disabled]="${args.disabled}" [isDrillDown]="${args.isDrillDown}">
         <i class="fa-sharp fa-light fa-file-chart-column"></i>
         <span>Button Text</span>
         <i class="fa-sharp fa-light fa-arrow-right"></i>
@@ -32,6 +32,9 @@ const meta: Meta<ButtonsComponent> = {
       options: ['primary', 'secondary', 'tertiary'] as IButtonType[],
     },
     disabled: {
+      control: 'boolean',
+    },
+    isDrillDown: {
       control: 'boolean',
     },
   },

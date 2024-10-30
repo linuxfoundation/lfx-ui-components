@@ -13,6 +13,8 @@ export class ButtonsComponent {
   type = input<IButtonType>('primary');
   disabled = input<boolean>(false);
 
+  isDrillDown = input<boolean>(false);
+
   click = output<void>();
 
   onClick() {

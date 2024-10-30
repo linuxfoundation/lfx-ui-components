@@ -66,4 +66,9 @@
       color: $grey-700;
     }
   }
+
+  &.lfx-button--drill-down {
+    border-top-left-radius: $dim-40;
+    border-bottom-left-radius: 0;
+  }
 }

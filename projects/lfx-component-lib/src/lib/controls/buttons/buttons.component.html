@@ -1,6 +1,7 @@
 <button
   class="lfx-button lfx-button--{{ type().toLowerCase() }}"
   [disabled]="disabled()"
+  (click)="onClick()"
 >
   <ng-content />
 </button>

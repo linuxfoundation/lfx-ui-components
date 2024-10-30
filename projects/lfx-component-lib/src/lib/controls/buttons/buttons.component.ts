@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, output } from '@angular/core';
 
 export type IButtonType = 'primary' | 'secondary' | 'tertiary';
 
@@ -12,4 +12,10 @@ export type IButtonType = 'primary' | 'secondary' | 'tertiary';
 export class ButtonsComponent {
   type = input<IButtonType>('primary');
   disabled = input<boolean>(false);
+
+  click = output<void>();
+
+  onClick() {
+    this.click.emit();
+  }
 }

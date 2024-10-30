@@ -3,74 +3,74 @@
  * SPDX-License-Identifier: MIT
  */
 
-@import "./constants.scss";
+@import "./mixins/color-mixins.scss";
 
 //  default text colors
 *,
 .text-primary {
-  color: $grey-1000;
+  @include text-primary-color;
 }
 
 .text-secondary {
-  color: #808b91;
+  @include text-secondary-color;
 }
 
 // background colors
 .primary {
-  color: $blue-500;
+  @include primary-color;
 }
 
 .secondary {
-  color: $blue-50;
+  @include secondary-color;
 }
 
 a,
 .link-text {
   cursor: pointer;
-  color: $blue-500;
+  @include primary-color;
   &:hover {
-    color: $blue-700;
+    @include link-hover-color;
   }
   &:active {
-    color: $blue-800;
+    @include link-active-color;
   }
 }
 
 .message {
   &.notice {
-    color: $blue-500;
+    @include message-color-notice;
   }
   &.warning {
-    color: $orange-500;
+    @include message-color-warning;
   }
   &.success {
-    color: $green-500;
+    @include message-color-success;
   }
   &.error {
-    color: $red-500;
+    @include message-color-error;
   }
 }
 
 // background colors
 .bg-primary {
-  background-color: $blue-500;
+  @include primary-color;
 }
 
 .bg-secondary {
-  background-color: $blue-50;
+  @include secondary-color;
 }
 
 .bg-message {
   &.notice {
-    background-color: $blue-50;
+    @include message-color-notice;
   }
   &.warning {
-    background-color: $orange-50;
+    @include message-color-warning;
   }
   &.success {
-    background-color: $green-50;
+    @include message-color-success;
   }
   &.error {
-    background-color: $red-50;
+    @include message-color-error;
   }
 }

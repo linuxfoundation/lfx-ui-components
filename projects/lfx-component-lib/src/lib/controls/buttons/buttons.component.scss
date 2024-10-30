@@ -1,0 +1,7 @@
+@import "../../styles/mixins/color-mixins.scss";
+
+.lfx-button {
+  &.lfx-button--primary {
+    @include primary-color;
+  }
+}

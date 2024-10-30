@@ -41,6 +41,16 @@
                 "defaultValue": "{\n  render: () => ({\n    template: `\n      <p>This is a paragraph of body text. It uses Open Sans, sans-serif font with a size of 0.875rem (14px) and line height of 1rem (16px).</p>\n    `,\n  }),\n}"
             },
             {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/lfx-component-lib/src/lib/controls/buttons/__docs__/buttons.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {},\n}"
+            },
+            {
                 "name": "DefaultText",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -201,6 +211,16 @@
                 "defaultValue": "{\n  title: 'LFX Components/Containers/Toast',\n  component: ToastComponent,\n  tags: ['autodocs'],\n  render: (args) => ({\n    template: `\n      <lfx-toast type=\"${args.type}\">\n        <h1>Title</h1>\n        <p>Body paragraph</p>\n      </lfx-toast>\n    `,\n  }),\n  argTypes: {\n    type: {\n      control: 'select',\n      options: ['notice', 'warning', 'success', 'error'] as IType[],\n    },\n  },\n  args: {\n    type: 'notice' as IType,\n  },\n}"
             },
             {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/lfx-component-lib/src/lib/controls/buttons/__docs__/buttons.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<ButtonsComponent>",
+                "defaultValue": "{\n  title: 'LFX Components/Controls/Buttons',\n  component: ButtonsComponent,\n  tags: ['autodocs'],\n  render: (args) => ({\n    template: `\n      <lfx-buttons [type]=\"primary\">\n        <span>Button Text</span>\n      </lfx-buttons>\n    `,\n  }),\n}"
+            },
+            {
                 "name": "Notice",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -300,6 +320,35 @@
                         }
                     }
                 ]
+            },
+            {
+                "name": "getElement",
+                "file": "projects/lfx-component-lib/src/lib/controls/buttons/__docs__/buttons.stories.ts",
+                "ctype": "miscellaneous",
+                "subtype": "function",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "args": [
+                    {
+                        "name": "canvasElement",
+                        "type": "HTMLElement",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "returnType": "HTMLElement",
+                "jsdoctags": [
+                    {
+                        "name": "canvasElement",
+                        "type": "HTMLElement",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
             }
         ],
         "typealiases": [
@@ -342,6 +391,17 @@
                 "subtype": "typealias",
                 "rawtype": "StoryObj<ToastComponent>",
                 "file": "projects/lfx-component-lib/src/lib/containers/toast/__docs__/toast.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 183
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<ButtonsComponent>",
+                "file": "projects/lfx-component-lib/src/lib/controls/buttons/__docs__/buttons.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -534,6 +594,28 @@
                     "defaultValue": "{\n  render: () => ({\n    template: `\n      <small>This is small text, also known as body2 in Figma. It uses Open Sans, sans-serif font with a size of 0.875rem (14px).</small>\n    `,\n  }),\n}"
                 }
             ],
+            "projects/lfx-component-lib/src/lib/controls/buttons/__docs__/buttons.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/lfx-component-lib/src/lib/controls/buttons/__docs__/buttons.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {},\n}"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/lfx-component-lib/src/lib/controls/buttons/__docs__/buttons.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<ButtonsComponent>",
+                    "defaultValue": "{\n  title: 'LFX Components/Controls/Buttons',\n  component: ButtonsComponent,\n  tags: ['autodocs'],\n  render: (args) => ({\n    template: `\n      <lfx-buttons [type]=\"primary\">\n        <span>Button Text</span>\n      </lfx-buttons>\n    `,\n  }),\n}"
+                }
+            ],
             "projects/lfx-component-lib/src/lib/containers/toast/__docs__/toast.stories.ts": [
                 {
                     "name": "Error",
@@ -652,6 +734,37 @@
                         }
                     ]
                 }
+            ],
+            "projects/lfx-component-lib/src/lib/controls/buttons/__docs__/buttons.stories.ts": [
+                {
+                    "name": "getElement",
+                    "file": "projects/lfx-component-lib/src/lib/controls/buttons/__docs__/buttons.stories.ts",
+                    "ctype": "miscellaneous",
+                    "subtype": "function",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "args": [
+                        {
+                            "name": "canvasElement",
+                            "type": "HTMLElement",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "returnType": "HTMLElement",
+                    "jsdoctags": [
+                        {
+                            "name": "canvasElement",
+                            "type": "HTMLElement",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
             ]
         },
         "groupedEnumerations": {},
@@ -702,6 +815,19 @@
                     "subtype": "typealias",
                     "rawtype": "StoryObj<ToastComponent>",
                     "file": "projects/lfx-component-lib/src/lib/containers/toast/__docs__/toast.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 183
+                }
+            ],
+            "projects/lfx-component-lib/src/lib/controls/buttons/__docs__/buttons.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<ButtonsComponent>",
+                    "file": "projects/lfx-component-lib/src/lib/controls/buttons/__docs__/buttons.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
@@ -801,6 +927,36 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "Warning",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lfx-component-lib/src/lib/controls/buttons/__docs__/buttons.stories.ts",
+                "type": "function",
+                "linktype": "miscellaneous",
+                "linksubtype": "function",
+                "name": "getElement",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lfx-component-lib/src/lib/controls/buttons/__docs__/buttons.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lfx-component-lib/src/lib/controls/buttons/__docs__/buttons.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
